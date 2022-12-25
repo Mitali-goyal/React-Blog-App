@@ -4,11 +4,6 @@ import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 
 const Blog = (props) => {
-  const { id } = useParams();
-  const handleDelete = () => {
-    fetch("http://localhost:3000/blogs", { method: "DELETE" });
-  };
-
   return (
     <Card className="shadow bg-body rounded">
       <Card.Body>
